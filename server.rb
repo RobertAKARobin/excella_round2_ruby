@@ -5,7 +5,7 @@ require "json"
 
 def api endpoint, params = {}
   HTTParty.get(endpoint, headers: {
-    api_key: "c1741a3bad6145c4a5f7ccf198d460f4"
+    "api_key": "c1741a3bad6145c4a5f7ccf198d460f4"
   }, query: params).parsed_response
 end
 
